@@ -1,0 +1,125 @@
+/** @format */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  scroll-behavior: smooth;
+  outline: none;
+}
+
+body {
+  background: color-mix(in srgb, black 87%, blue 18%);
+  color: #fff;
+}
+
+.container_cover {
+  max-width: 1024px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.container_cover nav {
+  display: flex;
+  gap: 25px;
+  height: auto;
+  padding: 25px;
+  align-items: center;
+  justify-content: center;
+}
+
+.container_cover nav .logo_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container_cover nav .logo_container .logo_text {
+  font-size: 35px;
+  text-transform: uppercase;
+  color: transparent;
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0.822),
+    rgb(55, 55, 235)
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+.container_cover nav .logo_container .logo {
+  width: 42px;
+  height: 42px;
+  display: flex;
+}
+
+.container_cover nav .nav_links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+}
+
+.container_cover nav .nav_links li {
+  list-style: none;
+}
+
+.container_cover nav .nav_links li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.container_cover nav .social_icons_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+}
+
+.container_cover nav .social_icons_container a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.container_cover main {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 10px;
+}
+
+main_image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+img {
+  width: 150px;
+}
+
+main .main_content {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  padding: 20px;
+  gap: 20px;
+}
+
+main .main_content p,
+main .main_content h1 {
+  text-align: center;
+}
+
+main .main_button button {
+  background: linear-gradient(to right, rgba(255, 255, 255, 0.767), blue);
+  width: 180px;
+  height: 50px;
+  padding: 12px 24px;
+  border-style: none;
+  border-radius: 10px;
+}
